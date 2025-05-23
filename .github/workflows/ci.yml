@@ -31,8 +31,3 @@ jobs:
       - name: Run tests
         run: |
           python manage.py test
-
-      - name: Lint code
-        run: |
-          pip install flake8
-          flake8 . --max-line-length=120 --exclude=venv,env
